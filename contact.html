@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="heading">Contact</h1>
+        </header>
+        <main>
+            <form id="form" action="/index.html" method="post">
+                <label for="email">Email Address
+                    <input id="email" type="email" name="email" placeholder="info@domain.com" required>
+                </label>
+                <br />
+                <label for="password"> Password
+                    <input id="password" type="password" placeholder="password" name="password" minlength="8" required>
+                </label>
+                <br />
+                <label for="age">Age
+                    <input id="age" type="number" min="18" max="150" placeholder="18" required>
+                </label>
+                <br />
+                <label for="date"> Date
+                    <input id="date" type="date" name="date">
+                </label>
+                <br />
+                <label for="description">Description
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </label>
+                <br />
+                <label for="file">File</label>
+                <input type="file" name="file" id="file" multiple>
+                <br />
+                <label for="cars">Cars
+                    <select name="cars" id="cars" multiple>
+                        <option value="audi">Audi</option>
+                        <option value="gmc">GMC</option>
+                        <option value="tesla" selected>Tesla</option>
+                        <option value="ford">Ford</option>
+                    </select>
+                </label>
+                <br />
+                <br />
+                <label for="radio">Select One</label>
+                <input type="radio" name="radio" id="radio" value="radio">
+                <input type="radio" name="radio" id="radio2" value="radio2">
+                <input type="radio" name="radio" id="radio3" value="radio3">
+                <input type="radio" name="radio" id="radio4" value="radio4">
+                <br />
+
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+    </div>
+    <div>
+        <button onclick="changeHeading()">Change Heading</button>
+        <button onclick="startClock()">Time</button>
+        <button onclick="timeHeading()">Time Value</button>
+        <button onclick="getLocation()">Location</button>
+    </div>
+    <script src="submit.js"></script>
+</body>
+
+</html>

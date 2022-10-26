@@ -6,50 +6,76 @@
     box-sizing: inherit;
 }
 
-div.container {
+body {
+    background-color: rgb(231, 177, 101);
     display:flex;
     flex-direction: column;
 }
 
-div.container > header {
-    
-    margin: 2%;
-    text-align: center;
-
+div.container {
+    display: flex;
+    flex-direction: column;
 }
 
-nav {
-    
-    display:flex;
+div.container>header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 100px;
+    margin: 2%;
     justify-content: center;
 }
 
-nav button {
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav>a,
+nav>button,
+nav>a>button {
     margin: 1% 2% 1% 2%;
     width: 75px;
 }
-main{
+
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 }
 
-main div {
-    width: 33%;
+main>div {
+    width: 30%;
     border: 1px solid rgb(81, 81, 81);
     border-radius: 10px;
     padding: 10px;
+    margin: 5px;
     height: 80vh;
     overflow: scroll;
-    margin: 2% 0 2% 0;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #fff;
 }
 
-main div ul {
+main>div>ul {
     padding: 0 20px 0 20px;
 }
 
-main div img {
+main>div>img {
     width: 95%;
+}
+
+main>form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+html > body > div {
+    display: flex;
+    justify-content: center;
+}
+
+body > div > button {
+    margin: 5px;
 }
