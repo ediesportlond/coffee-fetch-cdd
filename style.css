@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+div.container {
+    display:flex;
+    flex-direction: column;
+}
+
+div.container > header {
+    
+    margin: 2%;
+    text-align: center;
+
+}
+
+nav {
+    
+    display:flex;
+    justify-content: center;
+}
+
+nav button {
+    margin: 1% 2% 1% 2%;
+    width: 75px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main div {
+    width: 33%;
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 10px;
+    padding: 10px;
+    height: 80vh;
+    overflow: scroll;
+    margin: 2% 0 2% 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+main div ul {
+    padding: 0 20px 0 20px;
+}
+
+main div img {
+    width: 95%;
+}
